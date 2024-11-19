@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Registration form in HTML CSS </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <link rel="stylesheet" href="css/register.css">
+      <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <header>
+        <!-- /////////////////////start-top-header\\\\\\\\\\\\\\\\\\\\ -->
+            <div class="top-header">
+            <div class="container">
+                <div class="top-header-conent">
+                    <a href="#" class="logo"><img src="img-1/logo-black.png" alt=""></a>
+                    <form action="" class="search">
+                        <input type="search" placeholder="Seaech For Product">
+                        <button type="submit">Search</button>
+                    </form>
+                    <div class="header-cart">
+                        <div onclick="openCart()" class="icon-cart">
+                        <i class="fa-solid fa-bag-shopping"></i>            
+                        <span class="count">0</span>
+                        </div>
+                        <div class="price">
+                        <p>My Cart:</p>
+                        <span  class="price-cart">$0.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <!-- /////////////////////end-top-header\\\\\\\\\\\\\\\\\\\\ -->
+        <!-- /////////////////////start-bottom-header\\\\\\\\\\\\\\\\\ -->
+        <nav>
+            <div class="links container">
+                <i onclick="open_menu()" class="fa-solid fa-bars btn-open-menu"></i>
+                <ul class="nav-item" id="menu">
+                    <span onclick="close_menu()" class="bg-overlay"></span>
+                    <i onclick="close_menu()" class="fa-regular fa-circle-xmark btn-close-menu"></i>
+                    <img class="logo-menu" src="img-1/logo-black.png" alt="">
+
+                    <li><a href="index.html" class="activ activ-item">Home</a></li>
+                    <li><a href="all item.html" target="_blank"  class="activ-item">all Product</a></li>
+                    <li><a href="#"  class="activ-item">Blog</a></li>
+                    <li><a href="#"  class="activ-item">about us</a></li>
+                    <li><a href="#"  class="activ-item">content</a></li>
+                </ul>
+                <div class="nav-button">
+                  <button class="btn-1"><a target="_blank" href="login.html">Login <i class="fa-solid fa-right-to-bracket"></i></a></button>
+                </div>
+            </div>
+         </nav>
+        <!-- /////////////////////end-bottom-header\\\\\\\\\\\\\\\\\\\\ -->
+    </header>
+            <!-- /////////////////////end-header\\\\\\\\\\\\\\\\\\\\ -->
+     <!-- /////////////////////start-cart\\\\\\\\\\\\\\\\\\\\ -->
+     <div class="cart ">
+      <div class="top-cart">
+          <h3>my cart<span class="conut_item_cart">(0 item in cart)</span></h3>
+          <span onclick="closeCart()" class="close"><i class="fa-regular fa-circle-xmark"></i></span>
+      </div>
+      <div class="item-in-cart">
+      </div>
+      <div class="bottom-cart">
+          <div class="total">
+              <p>Suptotal</p>
+              <p id="price_cart_total" class="price-cart">$0</p>
+          </div>
+          <div class="button-cart">
+            <a href="check.html" class="btn-cart">proceed to checkout</a>
+            <button  class="btn-cart trans-bg"><a href="all item.html">shop more</a></button>
+          </div>
+      </div>
+  </div>
+          <!-- /////////////////////end-cart\\\\\\\\\\\\\\\\\\\\ -->
+        <div class="wrapper">
+          <h2>Registration</h2>
+          <form novalidate>
+        <div class="input-box">
+          <input id="username" type="text" placeholder="Enter your Name" >
+        </div>
+        <div class="input-box">
+          <input id="email" type="text" placeholder="Enter your Email" >
+        </div>
+        <div class="input-box">
+          <input id="password" type="password" placeholder="Create Password" >
+        </div>
+        <div class="policy">
+          <input type="checkbox" >
+          <h3>I accept terms & conditions</h3>
+
+        </div>
+        <div class="input-box button">
+          <input id="sign-up" type="submit" value="Register Now" >
+        </div>
+        <div class="text">
+          <h3>Already have an account? <a href="login.html">Login Now</a></h3>
+        </div>
+          </form>
+        </div>
+
+
+
+        <script src="js/main.js"></script>
+        <script src="js/register.js"></script>
+    </body>
+</html>

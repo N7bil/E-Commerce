@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img-1/icon.png">
+    <title>E-Commerce</title>
+</head>
+<body> 
+        <!-- /////////////////////start-header\\\\\\\\\\\\\\\\\\\\ -->
+    <header>
+        <!-- /////////////////////start-top-header\\\\\\\\\\\\\\\\\\\\ -->
+         <div class="top-header">
+            <div class="container">
+                <div class="top-header-conent">
+                    <a href="#" class="logo"><img src="img-1/logo-black.png" alt=""></a>
+                    <form action="" class="search">
+                        <input type="search" placeholder="Seaech For Product">
+                        <button type="submit">Search</button>
+                    </form>
+                    <div class="header-cart">
+                       <div onclick="openCart()" class="icon-cart">
+                        <i class="fa-solid fa-bag-shopping"></i>            
+                        <span class="count">0</span>
+                       </div>
+                       <div class="price">
+                        <p>My Cart:</p>
+                        <span  class="price-cart">$0.0</span>
+                       </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <!-- /////////////////////end-top-header\\\\\\\\\\\\\\\\\\\\ -->
+        <!-- /////////////////////start-bottom-header\\\\\\\\\\\\\\\\\ -->
+        <nav>
+            <div class="links container">
+                <i onclick="open_menu()" class="fa-solid fa-bars btn-open-menu"></i>
+                <ul class="nav-item" id="menu">
+                    <span onclick="close_menu()" class="bg-overlay"></span>
+                    <i onclick="close_menu()" class="fa-regular fa-circle-xmark btn-close-menu"></i>
+                    <img class="logo-menu" src="img-1/logo-black.png" alt="">
+
+                    <li><a href="index.html" class="activ-item">Home</a></li>
+                    <li><a href="all item.html" target="_blank"  class="activ-item">all Product</a></li>
+                    <li><a href="#"  class="activ-item">Blog</a></li>
+                    <li><a href="#"  class="activ-item">about us</a></li>
+                    <li><a href="#"  class="activ-item">content</a></li>
+                </ul>
+                <div class="nav-button">
+                    <button class="btn-1"><a target="_blank"  href="register.html">Sign up<i class="fa-solid fa-user-plus"></i></a></button>
+                    <button class="btn-1"><a target="_blank" href="login.html">Login <i class="fa-solid fa-right-to-bracket"></i></a></button>
+                </div>
+            </div>
+         </nav>
+        <!-- /////////////////////end-bottom-header\\\\\\\\\\\\\\\\\\\\ -->
+    </header>
+        <!-- /////////////////////end-header\\\\\\\\\\\\\\\\\\\\ -->
+    <section>
+        <div class="check_out">
+            <div class="container">
+                <div class="check_out_content">
+                    <div class="left_content">
+                        <h2>Delivery address</h2>
+                        <form action="">
+                            <label>Email:</label>
+                            <input placeholder="Enter Your Email" type="email">
+                            <label>Name:</label>
+                            <input placeholder="Enter Your Name" type="text">
+                            <label>Address:</label>
+                            <input placeholder="Enter Your Address" type="text">
+                            <label>Phone:</label>
+                            <input placeholder="Enter Your Phone" type="number">
+                            <h2 class="coupon">coupon code</h2>
+                            <label>Coupon Code:</label>
+                            <input placeholder="Enter Your Code" type="text">
+                        </form>
+                    </div>
+                    <div class="right_content">
+                        <h2>order summary</h2>
+                        <div class="items">
+                            <div class="item_cart">
+                                <img src="img-1/product/product-1.jpg" alt="">
+                                <div class="content">
+                                    <h4>iPhone 3G</h4>
+                                    <p class="price_cart">price: <span>$185</span></p>
+                                </div>
+                            </div>
+                            <div class="item_cart">
+                                <img src="img-1/product/product3.jpg" alt="">
+                                <div class="content">
+                                    <h4>Computer Screen</h4>
+                                    <p class="price-cart">price: <span>$140</span></p>
+                                </div>
+                            </div>
+
+                            <div class="total">
+                                <p>total:</p>
+                                <span>$325</span>
+                            </div>
+                            <div class="btn_div">
+                                <button>please order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- /////////////////////start-cart\\\\\\\\\\\\\\\\\\\\ -->
+    <div class="cart ">
+        <div class="top-cart">
+            <h3>my cart<span class="conut_item_cart">(0 item in cart)</span></h3>
+            <span onclick="closeCart()" class="close"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+        <div class="item-in-cart">
+        </div>
+        <div class="bottom-cart">
+            <div class="total">
+                <p>Suptotal</p>
+                <p id="price_cart_total" class="price-cart">$0</p>
+            </div>
+            <div class="button-cart">
+                <a href="check.html" class="btn-cart">proceed to checkout</a>
+                <button  class="btn-cart trans-bg"><a href="all item.html">shop more</a></button>
+            </div>
+        </div>
+    </div>
+            <!-- /////////////////////end-cart\\\\\\\\\\\\\\\\\\\\ -->
+            <!-- /////////////////////start-\\\\\\\\\\\\\\\\\\\\ -->
+
+        <!-- /////////////////////start-footer\\\\\\\\\\\\\\\\\\\\ -->
+    <footer>
+        <div class="container">
+            <div class="big-row">
+                <img src="img-1/logo-white.png" alt="">
+                <div class="hotline">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="text">
+                        <h5>Hotline Free 24/24</h5>
+                        <h6>(+100)123 456 780 </h6>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="row">
+                <h4>FAQs & Help</h4>
+                <div class="links">
+                    <a href="#">F.A.Q’s</a>
+                    <a href="#">Events</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Ordering & Ttracking</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>shopping & Delivery</h4>
+                <div class="links">
+                    <a href="#">Discount</a>
+                    <a href="#">Shopping Guide</a>
+                    <a href="#">Payment & Shopping</a>
+                    <a href="#">Delivery Information</a>
+                    <a href="#">Estimated Delivery Time</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Information</h4>
+                <div class="links">
+                    <a href="#">Populer</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Your Account</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Condation</a>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+            <p class="p-1">© Copyright 2024  |  All Rights Reserved by SCORPION</p>
+            <div class="payment">
+                <img src="img-1/payment-1.png" alt="">
+                <img src="img-1/payment-2.png" alt="">
+                <img src="img-1/payment-3.png" alt="">
+                <img src="img-1/payment-4.png" alt="">
+            </div>
+            </div>
+        </div>
+    </footer>
+        <!-- /////////////////////end-footer\\\\\\\\\\\\\\\\\\\\ -->
+
+    <script src="js/main.js"></script>
+    <script src="js/all_product.js"></script>
+</html>

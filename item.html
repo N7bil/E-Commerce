@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+            <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/item.css">
+    <link rel="icon" href="img-1/icon.png">
+    <title>E-Commerce</title>
+</head>
+<body> 
+        <!-- /////////////////////start-header\\\\\\\\\\\\\\\\\\\\ -->
+    <header>
+        <!-- /////////////////////start-top-header\\\\\\\\\\\\\\\\\\\\ -->
+         <div class="top-header">
+            <div class="container">
+                <div class="top-header-conent">
+                    <a href="#" class="logo"><img src="img-1/logo-black.png" alt=""></a>
+                    <form action="" class="search">
+                        <input type="search" placeholder="Seaech For Product">
+                        <button type="submit">Search</button>
+                    </form>
+                    <div class="header-cart">
+                       <div onclick="openCart()" class="icon-cart">
+                        <i class="fa-solid fa-bag-shopping"></i>            
+                        <span class="count">0</span>
+                       </div>
+                       <div class="price">
+                        <p>My Cart:</p>
+                        <span  class="price-cart">$0.0</span>
+                       </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <!-- /////////////////////end-top-header\\\\\\\\\\\\\\\\\\\\ -->
+        <!-- /////////////////////start-bottom-header\\\\\\\\\\\\\\\\\ -->
+         <nav>
+            <div class="links container">
+                <i onclick="open_menu()" class="fa-solid fa-bars btn-open-menu"></i>
+                <ul class="nav-item" id="menu">
+                    <span onclick="close_menu()" class="bg-overlay"></span>
+                    <i onclick="close_menu()" class="fa-regular fa-circle-xmark btn-close-menu"></i>
+                    <img class="logo-menu" src="img-1/logo-black.png" alt="">
+
+                    <li><a href="#" class="activ activ-item">Home</a></li>
+                    <li><a href="#"  class="activ-item">all Product</a></li>
+                    <li><a href="#"  class="activ-item">Blog</a></li>
+                    <li><a href="#"  class="activ-item">about us</a></li>
+                    <li><a href="#"  class="activ-item">content</a></li>
+                </ul>
+                <div class="nav-button">
+                    <button class="btn-1"><a target="_blank"  href="register.html">Sign up<i class="fa-solid fa-user-plus"></i></a></button>
+                    <button class="btn-1"><a target="_blank" href="login.html">Login <i class="fa-solid fa-right-to-bracket"></i></a></button>
+                </div>
+            </div>
+         </nav>
+        <!-- /////////////////////end-bottom-header\\\\\\\\\\\\\\\\\\\\ -->
+    </header>
+        <!-- /////////////////////end-header\\\\\\\\\\\\\\\\\\\\ -->
+        <!-- /////////////////////start-cart\\\\\\\\\\\\\\\\\\\\ -->
+    <div class="cart ">
+        <div class="top-cart">
+            <h3>my cart<span class="conut_item_cart">(0 item in cart)</span></h3>
+            <span onclick="closeCart()" class="close"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+        <div class="item-in-cart">
+        </div>
+        <div class="bottom-cart">
+            <div class="total">
+                <p>Suptotal</p>
+                <p id="price_cart_total" class="price-cart">$0</p>
+            </div>
+            <div class="button-cart">
+                <a href="check.html" class="btn-cart">proceed to checkout</a>
+                <button  class="btn-cart trans-bg"><a href="all item.html">shop more</a></button>
+            </div>
+        </div>
+    </div>
+        <!-- /////////////////////end-cart\\\\\\\\\\\\\\\\\\\\ -->
+        <!-- /////////////////////start-details\\\\\\\\\\\\\\\\\\\\ -->
+    <div class="item-detail">
+        <div class="container">
+            <div class="img-item">
+                <div class="big-img">
+                    <img id="bigImg" src="img-1/product/product-1.jpg" alt="">
+                </div>
+                <div class="sm-img">
+                    <img onclick="ChanegItemImg(this.src)" src="img-1/product/product-1.jpg" alt="">
+                    <img onclick="ChanegItemImg(this.src)" src="img-1/product/product1.jpg" alt="">
+                    <img onclick="ChanegItemImg(this.src)" src="img-1/product/product-2.jpg" alt="">
+                    <img onclick="ChanegItemImg(this.src)" src="img-1/product/product2.jpg" alt="">
+                </div>
+            </div>
+            <div class="details-item">
+                <h1 class="name">Nabiljjjjjjj</h1>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price">
+                    <p><span>$185</span></p>
+                    <p class="old-price">$225</p>
+                </div>  
+                <h5>Avaailbility: <span>In Stock</span></h5>
+                <h5>SKU: <span>sunnvinrnnwiwijowijdiowhwohowiowhdowhod </span></h5>
+                <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quam voluptas ab sit ratione libero dolor sequi non perferendis eos veniam assumenda minima, vero in doloribus eius mollitia distinctio deleniti id recusandae quia impedit perspiciatis ducimus. Molestiae, atque possimus alias aliquam eveniet praesentium omnis sint, ut sequi ducimus, odit nisi?</p>
+                <h4>Hurry Up! Only 98 Product lift in Stock</h4>
+                <button><a href="#">Add To cart <i class="fa-solid fa-cart-plus"></i></a></button>
+
+                    <div class="icon">
+                        <span><i class="fa-solid fa-heart"></i></span>
+                        <span><i class="fa-solid fa-sliders"></i></span>
+                        <span><i class="fa-solid fa-print"></i></span>
+                        <span><i class="fa-solid fa-share-nodes"></i></span>
+                    </div>
+            
+        </div>
+    </div>
+        <!-- /////////////////////end-details\\\\\\\\\\\\\\\\\\\\ -->
+        <!-- /////////////////////start-slide\\\\\\\\\\\\\\\\\\\\ -->
+    <section class="slide slide-sale">
+        <div class="container">
+            <div class="sale-sec mySwiper">
+                <div class="top-slide">
+                    <h2>on sale <span>product</span></h2>
+                </div>
+
+                <div id="swiper_items_sale" class="products swiper-wrapper">
+                  
+                </div>
+                <div class="swiper-button-next btn-Swip"></div>
+                <div class="swiper-button-prev btn-Swip"></div>
+                
+            </div>
+        </div>
+    </section>
+         <!-- /////////////////////end-slide\\\\\\\\\\\\\\\\\\\\ -->
+   
+            <!-- /////////////////////start-footer\\\\\\\\\\\\\\\\\\\\ -->
+        <div class="back">
+            <p>back to top</p>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="big-row">
+                    <img src="img-1/logo-white.png" alt="">
+                    <div class="hotline">
+                        <i class="fa-solid fa-headset"></i>
+                        <div class="text">
+                            <h5>Hotline Free 24/24</h5>
+                            <h6>(+100)123 456 780 </h6>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="row">
+                    <h4>FAQs & Help</h4>
+                    <div class="links">
+                        <a href="#">F.A.Q’s</a>
+                        <a href="#">Events</a>
+                        <a href="#">Contacts</a>
+                        <a href="#">Help Center</a>
+                        <a href="#">Ordering & Ttracking</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4>shopping & Delivery</h4>
+                    <div class="links">
+                        <a href="#">Discount</a>
+                        <a href="#">Shopping Guide</a>
+                        <a href="#">Payment & Shopping</a>
+                        <a href="#">Delivery Information</a>
+                        <a href="#">Estimated Delivery Time</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4>Information</h4>
+                    <div class="links">
+                        <a href="#">Populer</a>
+                        <a href="#">Our Services</a>
+                        <a href="#">Your Account</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms & Condation</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="bottom-footer">
+                <div class="container">
+                <p class="p-1">© Copyright 2024  |  All Rights Reserved by SCORPION</p>
+                <div class="payment">
+                    <img src="img-1/payment-1.png" alt="">
+                    <img src="img-1/payment-2.png" alt="">
+                    <img src="img-1/payment-3.png" alt="">
+                    <img src="img-1/payment-4.png" alt="">
+                </div>
+                </div>
+            </div>
+        </footer>
+            <!-- /////////////////////end-footer\\\\\\\\\\\\\\\\\\\\ -->
+
+
+
+
+
+
+        <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/main.js"></script>
+</html>
